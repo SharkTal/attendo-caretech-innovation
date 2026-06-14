@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryhmäkirjaus-optimointi | Attendo Innovaatio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .attendo-green { color: #007a33; }
+        .attendo-bg { background-color: #007a33; }
+        .gradient-bg { background: linear-gradient(135deg, #007a33 0%, #005a26 100%); }
+        .card { transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .mockup-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 attendo-bg rounded-full flex items-center justify-center text-white font-bold">A</div>
+                <span class="font-bold text-xl tracking-tight">CareTech <span class="attendo-green">Innovaatio</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-gray-500">
+                <a href="#discovery" class="hover:text-green-700 transition-colors">Discovery</a>
+                <a href="#solution" class="hover:text-green-700 transition-colors">Ratkaisu</a>
+                <a href="#impact" class="hover:text-green-700 transition-colors">Vaikuttavuus</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-block bg-white/20 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">User Feedback Case Study</div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Yksi kirjaus, useampi asukas.</h1>
+            <p class="text-xl opacity-90 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Optimoidaan ryhmäaktiviteettien kirjaaminen Efima Puhekirjaus -järjestelmässä. 
+                Vähemmän toistoa, enemmän aikaa laadukkaalle hoitotyölle.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#solution" class="bg-white text-green-800 px-8 py-3 rounded-full font-bold hover:bg-gray-100 shadow-lg transition-all">Katso Ratkaisu</a>
+                <a href="#impact" class="border border-white/50 px-8 py-3 rounded-full font-bold hover:bg-white/10 transition-all">Vaikuttavuus-analyysi</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Discovery Section -->
+    <section id="discovery" class="py-20 max-w-6xl mx-auto px-6 border-b border-gray-100">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Discovery: <span class="attendo-green text-opacity-80">Edge Case</span> Hoivatyössä</h2>
+            <p class="text-gray-500">Käyttäjäkokemuksen ja IT-logiikan välinen kuilu.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 card">
+                <h3 class="text-xl font-bold mb-6 flex items-center text-gray-700">
+                    <i class="fas fa-search-plus attendo-green mr-3"></i> Nykytilan haaste
+                </h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Vaikka puhekirjaus on mullistanut kirjaamisen, järjestelmä toimii edelleen <b>yksilökeskeisellä</b> logiikalla. Ryhmätilanteissa (jumppa, ulkoilu) tämä johtaa mekaaniseen työhön.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-red-50 rounded-2xl">
+                        <div class="text-red-600 font-bold mb-1">10x</div>
+                        <div class="text-[10px] text-red-400 uppercase font-bold tracking-tighter">Toistuvaa puhetta</div>
+                    </div>
+                    <div class="p-4 bg-red-50 rounded-2xl">
+                        <div class="text-red-600 font-bold mb-1">High</div>
+                        <div class="text-[10px] text-red-400 uppercase font-bold tracking-tighter">Kognitiivinen kuorma</div>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <blockquote class="text-2xl font-light italic text-gray-700 leading-relaxed border-l-4 border-green-500 pl-6">
+                    "Miksi kertoa tekoälylle kymmenen kertaa sama asia, jos voimme kertoa sen kerran ja valita kaikki osallistujat?"
+                </blockquote>
+                <p class="text-gray-500 text-sm">
+                    Tämä havainto perustuu päivittäiseen työhön hoivakodin arjessa. Optimointi tässä "reunatapauksessa" säästää kriittistä aikaa juuri silloin, kun hoitajien läsnäoloa tarvitaan eniten.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl font-bold mb-4">Ratkaisumalli: <span class="attendo-green">Ryhmäkirjaus-logiikka</span></h2>
+                    <p class="text-gray-500 italic">"Activity-Centric" vs "Person-Centric" kirjaaminen.</p>
+                </div>
+                <div class="hidden md:block text-xs font-mono text-gray-300">v1.0 Proposal</div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-20">
+                <!-- UI Mockup -->
+                <div class="flex justify-center">
+                    <div class="w-80 h-[640px] bg-gray-900 rounded-[3.5rem] p-4 mockup-shadow relative">
+                        <div class="bg-white h-full rounded-[2.5rem] overflow-hidden flex flex-col shadow-inner">
+                            <!-- Status Bar -->
+                            <div class="h-8 flex justify-between items-center px-8 pt-4">
+                                <span class="text-[10px] font-bold">9:41</span>
+                                <div class="w-16 h-4 bg-black rounded-full"></div>
+                                <div class="flex space-x-1">
+                                    <i class="fas fa-signal text-[8px]"></i>
+                                    <i class="fas fa-wifi text-[8px]"></i>
+                                    <i class="fas fa-battery-full text-[8px]"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="attendo-bg p-6 text-white text-center mt-4">
+                                <h4 class="font-bold text-sm tracking-wide uppercase">Uusi Ryhmäkirjaus</h4>
+                            </div>
+                            
+                            <div class="p-6 flex-1 overflow-y-auto space-y-6">
+                                <div>
+                                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Aktiviteetti</label>
+                                    <div class="mt-2 p-3 bg-gray-50 rounded-xl border border-gray-100 text-xs font-medium flex items-center">
+                                        <i class="fas fa-walking mr-2 attendo-green"></i> Ulkoilu (30 min)
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Valitut Asukkaat (5)</label>
+                                    <div class="mt-2 space-y-2">
+                                        <div class="flex items-center p-2 bg-green-50 rounded-lg border border-green-100 text-[11px]">
+                                            <i class="fas fa-check-circle text-green-600 mr-2"></i> Aino Virtanen
+                                        </div>
+                                        <div class="flex items-center p-2 bg-green-50 rounded-lg border border-green-100 text-[11px]">
+                                            <i class="fas fa-check-circle text-green-600 mr-2"></i> Eino Mäkinen
+                                        </div>
+                                        <div class="flex items-center p-2 bg-green-50 rounded-lg border border-green-100 text-[11px]">
+                                            <i class="fas fa-check-circle text-green-600 mr-2"></i> Helmi Järvinen
+                                        </div>
+                                        <div class="text-center text-gray-300 text-[10px] font-bold py-1">... + 2 muuta</div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100">
+                                    <p class="text-[10px] font-bold text-blue-800 mb-1 uppercase">Systeemi-ilmoitus</p>
+                                    <p class="text-[11px] text-blue-900 leading-tight">Tämä toiminto luo <b>5 itsenäistä merkintää</b> kerralla.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="p-6 border-t border-gray-50">
+                                <button class="w-full attendo-bg text-white py-4 rounded-2xl font-bold text-xs shadow-lg active:scale-95 transition-transform">VAHVISTA JA LÄHETÄ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logic Explanation -->
+                <div class="space-y-12">
+                    <div class="relative pl-12 border-l-2 border-gray-50">
+                        <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-full attendo-bg text-white flex items-center justify-center text-[10px] font-bold">1</div>
+                        <h4 class="font-bold text-lg mb-2">Master Record -syöttö</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Hoitaja sanelee aktiviteetin kuvauksen kerran. Tekoäly jäsentelee sen "aktiviteetti-olioksi" (Master Record), joka sisältää ajan, keston ja yleiskuvauksen.</p>
+                    </div>
+                    <div class="relative pl-12 border-l-2 border-gray-50">
+                        <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-full attendo-bg text-white flex items-center justify-center text-[10px] font-bold">2</div>
+                        <h4 class="font-bold text-lg mb-2">Monivalinta-määritys</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Sen sijaan että valitaan yksi asukas, käyttöliittymä sallii usean asukkaan valinnan. Tämä linkittää valitut asukkaat luotuun Master Recordiin.</p>
+                    </div>
+                    <div class="relative pl-12 border-l-2 border-gray-50">
+                        <div class="absolute -left-[13px] top-0 w-6 h-6 rounded-full attendo-bg text-white flex items-center justify-center text-[10px] font-bold">3</div>
+                        <h4 class="font-bold text-lg mb-2">Automatisoitu hajoitus</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Järjestelmä luo taustalla itsenäiset, audit-kelpoiset merkinnät jokaiselle asukkaalle. Tämä täyttää lainsäädännön vaatimukset säilyttäen samalla tehokkuuden.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Vaikuttavuus-analyysi</h2>
+            
+            <div class="grid md:grid-cols-3 gap-10 mb-20 text-center">
+                <div class="p-10 bg-white rounded-3xl shadow-sm border border-gray-100 card">
+                    <div class="text-5xl font-extrabold attendo-green mb-3">-90%</div>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Mekaaninen toisto</p>
+                    <p class="mt-6 text-sm text-gray-500 leading-relaxed italic">Eliminoi saman tiedon toistuvan syötön ryhmätilanteissa.</p>
+                </div>
+                <div class="p-10 bg-white rounded-3xl shadow-sm border border-gray-100 card">
+                    <div class="text-5xl font-extrabold attendo-green mb-3">100%</div>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Audit-kelpoisuus</p>
+                    <p class="mt-6 text-sm text-gray-500 leading-relaxed italic">Jokainen asukas saa oman, säädösten mukaisen merkinnän.</p>
+                </div>
+                <div class="p-10 bg-white rounded-3xl shadow-sm border border-gray-100 card">
+                    <div class="text-5xl font-extrabold attendo-green mb-3">5/5</div>
+                    <p class="text-xs text-gray-400 uppercase font-bold tracking-widest">Käyttäjäkokemus</p>
+                    <p class="mt-6 text-sm text-gray-500 leading-relaxed italic">Vastaa hoitotyön todellista luonnetta ja tiimidynamiikkaa.</p>
+                </div>
+            </div>
+
+            <!-- Scoring Matrix -->
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="bg-gray-50 px-8 py-6 border-b border-gray-100">
+                    <h4 class="font-bold text-gray-700">Innovaation Arvon Arviointi</h4>
+                </div>
+                <table class="w-full text-left text-sm">
+                    <tbody class="divide-y divide-gray-50">
+                        <tr>
+                            <td class="px-8 py-5 text-gray-600">Toistuvan syötön eliminointi</td>
+                            <td class="px-8 py-5 text-right text-green-600 font-bold tracking-tighter">✓✓✓✓✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-5 text-gray-600">Tietojen yhtenäisyys ryhmässä</td>
+                            <td class="px-8 py-5 text-right text-green-600 font-bold tracking-tighter">✓✓✓✓✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-5 text-gray-600">Jäljitettävyys ja turvallisuus</td>
+                            <td class="px-8 py-5 text-right text-green-600 font-bold tracking-tighter">✓✓✓✓</td>
+                        </tr>
+                        <tr>
+                            <td class="px-8 py-5 text-gray-600">Hoitajien oppimiskynnys</td>
+                            <td class="px-8 py-5 text-right text-green-600 font-bold tracking-tighter">✓✓✓✓✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+                <div>
+                    <div class="flex items-center justify-center md:justify-start space-x-2 mb-4">
+                        <div class="w-6 h-6 attendo-bg rounded-full flex items-center justify-center text-white text-[10px] font-bold">A</div>
+                        <span class="font-bold text-gray-800">CareTech Innovation Case</span>
+                    </div>
+                    <p class="text-xs text-gray-400">© 2026 Ehdotus ryhmäkirjaamisen optimoimiseksi.</p>
+                </div>
+                <div class="flex space-x-12">
+                    <div class="text-left">
+                        <h5 class="text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-3">Laatija</h5>
+                        <p class="text-xs font-bold text-gray-600">Hoitotyön asiantuntija & IT-kehittäjä</p>
+                    </div>
+                    <div class="text-left">
+                        <h5 class="text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-3">Yhteys</h5>
+                        <p class="text-xs font-bold text-gray-600">Attendo / Efima Project Feedback</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
