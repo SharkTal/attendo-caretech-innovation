@@ -7,6 +7,8 @@
 
 Tämä projekti on käyttäjälähtöinen kehitysehdotus **Efima Puhekirjaus** -järjestelmän optimoimiseksi Attendon hoivaympäristössä.
 
+Live Demo Link: https://sharktal.github.io/attendo-caretech-innovation/
+
 ### Tausta (The Discovery)
 Nykyinen järjestelmä on mullistanut kirjaamisen, mutta se toimii edelleen yksilökeskeisellä logiikalla. Ryhmätilanteissa, kuten **jumpassa** tai **ulkoilussa**, hoitaja joutuu toistamaan saman kuvauksen jokaiselle asukkaalle erikseen.
 
